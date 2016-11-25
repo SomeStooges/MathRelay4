@@ -1,0 +1,52 @@
+/*Styles sheet for the m_team_activity module*/
+body{
+  color: white;
+  margin: 0;
+  padding: 20px;
+  opacity: 0.7;
+  font-family: 'Advent Pro', sans-serif;
+}
+*:focus {
+    outline: none;
+}
+#table{
+  margin-top: 20px;
+  width: calc(100vw - 17px);
+  white-space:nowrap;
+  font-family: Arial;
+}
+#freezeButton{
+  position: fixed;
+  top:0;
+  right:0;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 120%;
+  height: 10vh;
+  width: 20vw;
+  transition: background-color 0.4s ease;
+  background-color: rgba(0,0,0,1);
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+#freezeButton:hover{
+  background-color: dimgray;
+}
+table{
+  border-collapse:collapse;
+  border:1px solid white;
+  border-color: white;
+  font-family: 'Advent Pro', sans-serif;
+}
+b{
+  font-family: 'Advent Pro', sans-serif;
+}
+th{
+  text-align: center;
+}
+td{
+  text-align: center;
+  border:1px solid white;
+  padding: 10px;
+  min-width: 65px;
+}

@@ -1,0 +1,41 @@
+/*Stylesheet for printout.php*/
+table{
+  /*border-collapse: collapse;*/
+  width: 45%;
+}
+td{
+  border: 1px solid black;
+  text-align: center;
+  width: 50%;
+  height: 10mm;
+}
+#teamDataTable1{
+  float:left;
+}
+#teamDataTable2{
+  float:right;
+}
+#teamDataTable3{
+  page-break-before: always;
+  position: absolute;
+  top: 299mm;
+  left: 0mm;
+}
+#teamDataTable4{
+  page-break-before: always;
+  position: absolute;
+  top: 299mm;
+  right:0mm;
+}
+@page {
+  size: Letter;
+  margin-bottom: 0;
+}
+@media print {
+  html, body {
+    width: 216mm;
+    height: 279mm;
+    margin: auto;
+  }
+  /* ... the rest of the rules ... */
+}

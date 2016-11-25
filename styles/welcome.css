@@ -1,0 +1,80 @@
+body {
+
+    text-align: center;
+    background-image: url('../images/SAM_1343.JPG');
+    background-size: cover;
+    font-size: 400%;
+    font-family: 'Advent Pro', sans-serif;
+
+}
+*:focus {
+    outline: none;
+}
+
+section {
+
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-position: center;
+    border: 3px solid black;
+    border:5%;
+    padding: 4%;
+    border-radius: 20px;
+    position:relative;
+
+    background-color: rgba(0,0,0,0.7);
+
+}
+
+h1 {
+    margin: 0%;
+    padding: 0%;
+}
+
+ul {
+  display: inline;
+}
+
+span#first {
+  color: rgb(94, 138, 103); <!--Light Green Color -->
+}
+
+span#second {
+  color: rgb(20, 102, 100); <!--Dark Green Color -->
+}
+
+span#third {
+    color: rgb(32, 70, 93); <!--Dark Blue Color -->
+}
+
+h2 {
+    color: rgb(36, 132, 97); /* <!-- Green color -->*/
+}
+
+.indexButton{
+  width: 150px;
+  height: 75px;
+  border:none;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.4s ease;
+  color: white;
+
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 20px;
+}
+#welcomeButton{
+  width: 300px;
+  height: 150px;
+  font-size: 70%;
+}
+#welcomeButton:hover{
+  background-color: rgb(94, 138, 103);
+}
+#adminButton:hover{
+  background-color: rgb(20, 102, 100);
+}
+#aboutButton:hover{
+  background-color: rgb(32, 70, 93);
+}

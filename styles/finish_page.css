@@ -1,0 +1,57 @@
+body {
+
+	background-image: url('../images/IMG_1544 (2).JPG');
+	background-size: cover;
+	text-align: center;
+  color: white;
+	min-width: 1280px;
+}
+h1{
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 400%;
+	margin: 10px;
+}
+*:focus {
+    outline: none;
+}
+section {
+	font-family:sans-serif;
+	min-width: 448px;
+  margin: 2vh 5%;
+	float: right;
+	width:35%;
+  background-position: center;
+  border: 3px;
+  border:5%;
+  padding: 4%;
+  border-radius: 20px;
+  position:relative;
+	word-wrap: break-word;
+  background-color: rgba(0,0,0,.7);
+}
+#pageTitle{
+	color: rgb(94, 138, 103);
+}
+#congratulations{
+	font-size: 30px;
+}
+#cleanUpParagraph{
+	text-align:justify;
+}
+#returnTitle{
+	width: 200px;
+  height: 75px;
+  border:none;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.4s ease;
+  color: white;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 20px;
+}
+#returnTitle:hover{
+		background-color: rgb(94, 138, 103);
+}
+#rank{
+	font-size: 200%;
+}
