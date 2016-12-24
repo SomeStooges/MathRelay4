@@ -18,11 +18,11 @@ $(document).ready( function() {
 			console.log(data);
 			data = JSON.parse(data);
 			if (data == "Successful") {
-				console.log(obj.adminPassword);
+				//console.log(obj.adminPassword);
 				window.location.href="control_panel.php";
 			}
 			else {
-				console.log(obj.adminPassword);
+				//console.log(obj.adminPassword);
 				$("#passErr").text("Your password is incorrect.");
 			}
 		});
