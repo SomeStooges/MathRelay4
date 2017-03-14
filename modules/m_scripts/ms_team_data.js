@@ -2,7 +2,12 @@
 
 //Requests team_data database from the server and reprints the table's contents
 function parseTime(time){
-  time = time - startTime;
+  if (time > startTime){
+    time = time-startTime;
+  }
+  else {
+    time = startTime - startTime;
+  }
 
   var tempH = Math.abs(parseInt(time/3600));
   var tempM = Math.abs(parseInt((time%3600)/60));
@@ -23,7 +28,7 @@ function updateTable(){
       p += "<td> " + rank + " </td>";
       for(j=0;j<teamData[i].length;j++){
         if( j == 5 || j == 6){
-          if( teamData[i][j] == 0){
+          if( teamData[i][j] === 0){
             teamData[i][j] = "---";
           }else{
             teamData[i][j] = parseTime(teamData[i][j]);
