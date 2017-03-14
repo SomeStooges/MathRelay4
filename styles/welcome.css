@@ -1,32 +1,25 @@
 body {
 
-    text-align: center;
-    background-image: url('../images/SAM_1343.JPG');
+    text-align: right;
     background-size: cover;
-    font-size: 400%;
+    font-size: 500%;
     font-family: 'Advent Pro', sans-serif;
+    background-color: none;
 
 }
 *:focus {
     outline: none;
 }
 
-section {
-
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-position: center;
-    border: 3px solid black;
-    border:5%;
-    padding: 4%;
-    border-radius: 20px;
-    position:relative;
-
-    background-color: rgba(0,0,0,0.7);
-
+.jumbotron{
+  height: 50vh;
+  background-color: white;
 }
-
+.filler{
+  height:25vh;
+}
+.contentLeft{
+}
 h1 {
     margin: 0%;
     padding: 0%;
@@ -53,20 +46,14 @@ h2 {
 }
 
 .indexButton{
-  width: 150px;
-  height: 75px;
+  width: 100%;
+  height: 33%;
   border:none;
   border-radius: 10px;
   background-color: rgba(0,0,0,0);
   transition: background-color 0.4s ease;
-  color: white;
-
+  text-align: left;
   font-family: 'Advent Pro', sans-serif;
-  font-size: 20px;
-}
-#welcomeButton{
-  width: 300px;
-  height: 150px;
   font-size: 70%;
 }
 #welcomeButton:hover{

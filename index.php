@@ -20,17 +20,27 @@
 	</head>
 
 	<body>
-		<section>
-		<h1>
-			<ul><span id="first">Math</span></ul>
-			<ul><span id="second">Relay</span></ul>
-			<ul><span id="third">2017</span></ul>
-		</h1>
-		<div style='height: 25px;'></div>
-		<button class = 'indexButton' id="welcomeButton" disabled> Student Login </button>
-		<br>
-		<button class = 'indexButton' id="adminButton"> Admin <br>Login </button>
-		<button class = 'indexButton' id="aboutButton"> About This Program </button>
-	</section>
+    <div class="filler">
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contentLeft">
+              <h1>Math</h1>
+              <h1>Relay</h1>
+              <h1>2017</h1>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contentRight">
+              <button class = 'indexButton' id="welcomeButton" disabled> Student Login </button>
+              <button class = 'indexButton' id="adminButton"> Admin Login </button>
+              <button class = 'indexButton' id="aboutButton"> About This Program </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 	</body>
 </html>
