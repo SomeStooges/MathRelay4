@@ -8,12 +8,18 @@ p{
   line-height: 100px;
   white-space: nowrap;
 }
-.blackbody{
+.decker{
   float:left;
   height:100vh;
   width:50vw;
+  background-image: url('../images/GalleryPhoto.jpg');
+}
+.blackbody{
+  float:left;
+  height:inherit;
+  width:inherit;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .container {
   position: absolute;
@@ -38,6 +44,7 @@ p{
   height:inherit;
   padding:15px;
   font-size: 20px;
+  text-align: left;
 }
 .subLeft{
   position: absolute;
@@ -65,5 +72,4 @@ p{
   position: absolute;
   margin-left: 50%;
   top: 70%;
-  padding: 15px;
 }

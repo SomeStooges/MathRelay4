@@ -33,12 +33,11 @@
 				Enter login information below <br />
 				Team ID: <input type="text" name="teamID" placeholder="Enter Team ID" id='teamID' class = 'loginField'> <br />
 				Team Password: <input type= "password" name="password" placeholder="Enter Password" id='teamPassword' class = 'loginField'><br />
+				<button id="user_login" class = 'userLoginButton'> LOGIN </button>
 				<span style="color: Red" id="passErr"></span>
 			</div>
 		</div>
 		<div class="navButtons">
-			<button id="user_login" class = 'userLoginButton'> Login </button>
-
 			<button id="back_button" class = 'userLoginButton'> BACK </button>
 			<!-- <br> <?php print $currentEvent ?> -->
 		</div>
