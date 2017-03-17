@@ -1,0 +1,68 @@
+body {
+    font-size: 400%;
+    font-family: 'Advent Pro', sans-serif;
+    padding: 0%;
+}
+p{
+  height: 100px;
+  line-height: 100px;
+  white-space: nowrap;
+}
+.blackbody{
+  float:left;
+  height:100vh;
+  width:50vw;
+  background-color: black;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0%;
+  padding: 0;
+  height: auto;
+  background-color: none;
+  display:inline;
+}
+.contentLeft{
+  height:inherit;
+  float:left;
+  margin-right: 10px;
+  border-right: 1px solid black
+  }
+.contentRight{
+  float:left;
+  margin-left:50%;
+  height:inherit;
+  padding:15px;
+}
+.subLeft{
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  text-align: right;
+  transform: translateY(-50%);
+  color: #49D6B8;
+  padding: 5%;
+}
+
+.indexButton{
+  height: 40%;
+  border:none;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.4s ease;
+  text-align: left;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 20px;
+}
+#welcomeButton:hover{
+  background-color: #49D6B8;
+}
+#adminButton:hover{
+  background-color: #49D6B8;
+}
+#aboutButton:hover{
+  background-color: #49D6B8;
+}

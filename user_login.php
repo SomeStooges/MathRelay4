@@ -16,23 +16,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-		<link rel="stylesheet" type="text/css" href="./styles/user_login.css"/>
+		<link rel="stylesheet" type="text/css" href="./styles/user_login_4.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Advent+Pro:500' rel='stylesheet' type='text/css'/>
 		<title>Team Captain Login</title>
 	<head>
 
-	<body style="text-align:center">
-	<section>
-		<h1><span id="one">Team</span><span id="two"> Captain</span><span id="three"> Login</span></h1>
-		<p><span id="second"> Enter login information below</span></p>
-		<p><span id="third"> Team ID: <input type="text" name="teamID" placeholder="Enter Team ID" id='teamID' class = 'loginField'></p>
-		<p> Team Password: <input type= "password" name="password" placeholder="Enter Password" id='teamPassword' class = 'loginField'></span></p>
-		<br>
-		<p style="color: Red" id="passErr"></p>
-		<button id="user_login" class = 'userLoginButton'> Login </button>
+	<body>
+		<div class="blackbody"></div>
+		<div class="container">
+			<div class="contentLeft">
+					<div class="subLeft">
+						Team Captain Login
+					</div>
+			</div>
+			<div class="contentRight">
+				Enter login information below <br />
+				Team ID: <input type="text" name="teamID" placeholder="Enter Team ID" id='teamID' class = 'loginField'> <br />
+				Team Password: <input type= "password" name="password" placeholder="Enter Password" id='teamPassword' class = 'loginField'><br />
+				<span style="color: Red" id="passErr"></span>
+			</div>
+		</div>
+		<div class="navButtons">
+			<button id="user_login" class = 'userLoginButton'> Login </button>
 
-		<button id="back_button" class = 'userLoginButton'> BACK </button>
-		<!-- <br> <?php print $currentEvent ?> -->
-	</section>
+			<button id="back_button" class = 'userLoginButton'> BACK </button>
+			<!-- <br> <?php print $currentEvent ?> -->
+		</div>
+
 	</body>
 </html>
