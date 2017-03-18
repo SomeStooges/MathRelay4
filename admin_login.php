@@ -25,9 +25,10 @@
 			</div>
 			<div class="contentRight">
 				Enter login information below <br />
-				Password: <input type = "password" name= "password" placeholder="Enter Password" id='adminPassword'>
+				<input type = "password" name= "password" placeholder="Enter Password" id='adminPassword'>
 				<button id="admin_login" class = 'userLoginButton'> LOGIN </button><br />
 				<span style="color: Red" id="passErr"></span>
+				<br />
 				If you are not an administrator, please click the back button below. Thank you.
 			</div>
 		</div>
