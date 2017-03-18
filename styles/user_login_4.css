@@ -8,6 +8,9 @@ p{
   line-height: 100px;
   white-space: nowrap;
 }
+*:focus {
+    outline: none;
+}
 .blackbody{
   float:left;
   height:100vh;

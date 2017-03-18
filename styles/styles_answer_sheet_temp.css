@@ -136,6 +136,7 @@ table{
 #questionGrid{
   background-color: black;
   opacity: 0.8;
+  height: 100vh;
 }
 
 #answerChoices {
