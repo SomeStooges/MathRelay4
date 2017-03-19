@@ -1,4 +1,4 @@
-_4<!-- Content for the Settings tab -->
+<!-- Content for the Settings tab -->
 <?php
 	require '../server/utilities.php';
  ?>

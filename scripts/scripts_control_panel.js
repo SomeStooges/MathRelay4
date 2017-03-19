@@ -166,7 +166,7 @@ function updateUI(){
 //Handles all view change (css,html) of the webpage for a change in the event
 function toggleButtons(event1){
   $('.ribbonButton').css('background-color','');
-  $('#'+event1).css('background-color','dimgray');
+  $('#'+event1).css('background-color','#49D6B8');
   switch (event1) {
     case "none":
       $(".ribbonButton").prop("disabled", true);
@@ -228,8 +228,8 @@ function toggleButtons(event1){
 
     //Activates only when the database is reset.
     default:
-      $('#none').css('background-color','dimgray');
-      $("#teamData").css('background-color', 'DimGray');
+      $('#none').css('background-color','#49D6B8');
+      $("#teamData").css('color', '#49D6B8');
 
   }
 }
@@ -268,18 +268,18 @@ $(document).ready(function() {
       adminConfirm();
   });
   $(".toolbarButton").click(function() {
-    $(".toolbarButton").css('background-color', '');
+    $(".toolbarButton").css('color', '');
     $('.contentMod').css('display', 'none'); //Resets all to none by default
     var target; //to save the value of the pointer
     toolbarID = $(this).attr("id");
-    $("#"+toolbarID).css('background-color', 'DimGray');
+    $("#"+toolbarID).css('color', '#49D6B8');
     switch (toolbarID) {
       case "teamData":
         target = $('#mod1');
         break; //get the pointer
       case "leaderboardLink":
-        $("#leaderboardLink").css('background-color', '');
-        $("#teamData").css('background-color', 'DimGray');
+        $("#leaderboardLink").css('color', '');
+        $("#teamData").css('color', '#49D6B8');
         window.open("leaderboard.php","_blank");
         target = $('#mod1');
         break;
@@ -296,8 +296,8 @@ $(document).ready(function() {
         target = $('#mod6');
         break;
       case "printTeamData":
-        $("#printTeamData").css('background-color', '');
-        $("#teamData").css('background-color', 'DimGray');
+        $("#printTeamData").css('color', '');
+        $("#teamData").css('color', 'color');
         window.open("printout.php","_blank");
         target = $('#mod1');
         break;
