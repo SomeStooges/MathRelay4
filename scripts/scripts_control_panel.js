@@ -172,6 +172,7 @@ function toggleButtons(event1){
       $(".ribbonButton").prop("disabled", true);
       $("#open").prop("disabled", false);
       $("#logoutButton").prop("disabled", false);
+      $("#clear").prop("disabled", false);
       break;
 
     case "open":
@@ -179,6 +180,7 @@ function toggleButtons(event1){
       $("#none").prop("disabled", false);
       $("#start").prop("disabled", false);
       $("#logoutButton").prop("disabled", false);
+      $("#clear").prop("disabled", false);
       break;
 
     case "start":
@@ -221,6 +223,7 @@ function toggleButtons(event1){
       $("#none").prop("disabled", false);
       $("#open").prop("disabled", false);
       $("#logoutButton").prop("disabled", false);
+      $("#clear").prop("disabled", false);
       break;
 
     //Activates only when the database is reset.

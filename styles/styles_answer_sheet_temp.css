@@ -26,13 +26,13 @@ table{
 }
 
 #teamNumber{
-  background-color: none;
 	margin-top:0;
   border: none;
+  width: 25%;
   height: 70px;
   color: white;
   padding: 17px;
-	width: 13%;
+
 	font-size: 300%;
 	font-family: 'Advent Pro', sans-serif;
 	text-align: center;
@@ -47,7 +47,7 @@ table{
   border: 0px solid grey;
   border:5%;
   position:absolute;
-  background-color: black;
+  /*background-color: black;*/
   opacity: 0.8;
 	width: 100%;
 	margin: 0;
@@ -55,6 +55,8 @@ table{
 }
 #teamNumberDiv{
   background-color: red;
+  width: 25%;
+  Height: 70px;
 }
 #freetimeDiv{
   position:absolute;

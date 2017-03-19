@@ -63,7 +63,7 @@
 	<body>
 		<div id="ribbon">
 			<div id='logoutDiv'> <button id='logoutButton'>Logout</button></div>
-			<div id="teamNumberDiv">
+			<div id="teamNumberDiv" style="background-color:red">
 				<h1 id='teamNumber'></h1>
 			</div>
 			<div id="title">
