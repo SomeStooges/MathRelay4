@@ -15,7 +15,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     		<link href='http://fonts.googleapis.com/css?family=Advent+Pro:500' rel='stylesheet' type='text/css'/>
-    		<link rel="stylesheet" type="text/css" href="./styles/index.css"/>
+    		<link rel="stylesheet" type="text/css" href="./styles/styles_index_4.css"/>
     		<title>Math Relay</title>
     	</head>
 

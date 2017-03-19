@@ -23,20 +23,20 @@ function bindLine(attemptsByTime , correctByTime ){
           label: "Aggregate Attempts",
           fillColor: "rgba(255, 75, 75, 0.3)",
           strokeColor: "rgba(255, 75, 75, 1)",
-          pointColor: "rgba(255, 75, 75, 0.3)",
-          pointStrokeColor: "#fff",
+          pointColor: "rgba(255, 75, 75)",
+          pointStrokeColor: "rgba(0,0,0,1)",
           pointHighlightFill: "#fff",
-          pointHighlightStroke: "rgba(220,220,220,1)",
+          pointHighlightStroke: "rgba(220,220,220,0.3)",
           data: attemptsByTime
       },
       {
           label: "Aggregate Correct Responses",
-          fillColor: "rgba(34, 250, 49, 0.3)",
-          strokeColor: "rgba(34, 250, 49, 1)",
-          pointColor: "rgba(34, 250, 49, 0.3)",
-          pointStrokeColor: "#fff",
+          fillColor: "rgba(51,204,51,0.3)",
+          strokeColor: "rgba(51,204,51,1)",
+          pointColor: "rgba(51,204,51,0.3)",
+          pointStrokeColor: "rgba(0,0,0,1)",
           pointHighlightFill: "#fff",
-          pointHighlightStroke: "rgba(151,187,205,1)",
+          pointHighlightStroke: "rgba(51,204,51,0.3)",
           data: correctByTime
       }
     ]
@@ -128,10 +128,10 @@ function bindBar2( attemptsByQuestion , correctByQuestion ){
 }
 var response;
 function createChart(){
-  chart1 = new Chart(chartDataStore[0][0]).Line(chartDataStore[0][1], {scaleShowGridLines: true, scaleGridLineColor : "rgba(255, 255, 255, 0.5)"});
-  chart2 = new Chart(chartDataStore[1][0]).Scatter(chartDataStore[1][1], {datasetStroke: false, scaleShowGridLines: true, scaleGridLineColor : "rgba(255, 255, 255, 0.5)"});
-  chart3 = new Chart(chartDataStore[2][0]).Bar(chartDataStore[2][1], {scaleShowGridLines: true, scaleGridLineColor : "rgba(255, 255, 255, 0.5)"});
-  chart4 = new Chart(chartDataStore[3][0]).Bar(chartDataStore[3][1], {scaleShowGridLines: true, scaleGridLineColor : "rgba(255, 255, 255, 0.5)"});
+  chart1 = new Chart(chartDataStore[0][0]).Line(chartDataStore[0][1], {scaleShowGridLines: true, scaleGridLineColor : "rgba(0, 0, 0, 0.2)"});
+  chart2 = new Chart(chartDataStore[1][0]).Scatter(chartDataStore[1][1], {datasetStroke: false, scaleShowGridLines: true, scaleGridLineColor : "rgba(0, 0, 0, 0.2)"});
+  chart3 = new Chart(chartDataStore[2][0]).Bar(chartDataStore[2][1], {scaleShowGridLines: true, scaleGridLineColor : "rgba(0, 0, 0, 0.2)"});
+  chart4 = new Chart(chartDataStore[3][0]).Bar(chartDataStore[3][1], {scaleShowGridLines: true, scaleGridLineColor : "rgba(0, 0, 0, 0.2)"});
 }
 function updateChart(){
   chart1.update();

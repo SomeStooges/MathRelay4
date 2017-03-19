@@ -23,7 +23,7 @@
 		<!-- Icons -->
 		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css">
 
-		<link rel="stylesheet" type="text/css" href="./styles/styles_control_panel_temp.css">
+		<link rel="stylesheet" type="text/css" href="./styles/styles_control_panel_4.css">
 		<link href='http://fonts.googleapis.com/css?family=Advent+Pro:500' rel='stylesheet' type='text/css'/>
 	</head>
 
