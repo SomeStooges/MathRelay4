@@ -1,56 +1,71 @@
-body {
-
-	background-image: url('../images/IMG_1544 (2).JPG');
-	background-size: cover;
-	text-align: center;
-  color: white;
-	min-width: 1280px;
-}
-h1{
+body{
+	color:black;
 	font-family: 'Advent Pro', sans-serif;
 	font-size: 400%;
+}
+h1{
 	margin: 10px;
 }
 *:focus {
     outline: none;
 }
-section {
-	font-family:sans-serif;
-	min-width: 448px;
-  margin: 2vh 5%;
-	float: right;
-	width:35%;
-  background-position: center;
-  border: 3px;
-  border:5%;
-  padding: 4%;
-  border-radius: 20px;
-  position:relative;
-	word-wrap: break-word;
-  background-color: rgba(0,0,0,.7);
+.container-fluid{
+	height: 100vh;
 }
-#pageTitle{
-	color: rgb(94, 138, 103);
+.col-md-6{
+	height:inherit;
+	padding: 0;
+}
+.blackBody{
+	width:100%;
+	height:100vh;
+	background-color: black;
+	opacity:0.8;
+}
+.rightSide{
+	position:absolute;
+	height:auto;
+	top:50vh;
+	transform: translateY(-50%);
+}
+.leftSide{
+	position:absolute;
+	height: auto;
+	top:50vh;
+	text-align: left;
+	transform: translateY(-50%);
+	right: 0%;
+}
+.pageTitle{
+	padding: 20px;
+	color: #49D6B8;
+	text-align: right;
 }
 #congratulations{
 	font-size: 30px;
+	width: 60%;
+	text-align: justify;
+	padding: 20px;
 }
 #cleanUpParagraph{
 	text-align:justify;
+	width: 60%;
+	padding: 20px;
+	font-size: 50%;
 }
 #returnTitle{
-	width: 200px;
-  height: 75px;
+	width: auto;
+  height: auto;
   border:none;
+	padding:20px;
   border-radius: 10px;
   background-color: rgba(0,0,0,0);
   transition: background-color 0.4s ease;
-  color: white;
   font-family: 'Advent Pro', sans-serif;
   font-size: 20px;
 }
 #returnTitle:hover{
-		background-color: rgb(94, 138, 103);
+	background-color: #49D6B8;
 }
 #rank{
 	font-size: 200%;
