@@ -2,6 +2,48 @@
 *:focus {
     outline: none;
 }
+.container-fluid{
+  height:100vh;
+}
+.row{
+  height:inherit;
+}
+.col-md-5{
+  height: inherit;
+  border-right: 1px solid black;
+  padding: 0;
+}
+#table1{
+  padding: 20px;
+  min-width:400px;
+  min-height: 200px;
+  height: 30%;
+  border-bottom: 1px solid black;
+}
+#table2{
+  padding: 20px;
+  min-height:450px;
+  min-width: 400px;
+  height: 70%;
+}
+.col-md-7{
+  height: inherit;
+  padding: 0;
+}
+#table3{
+  padding: 20px;
+  height:40%;
+  border-bottom: 1px solid black;
+  min-width: 800px;
+  min-height: 250px;
+}
+#table4{
+  padding: 20px;
+  height: 60%;
+  min-width: 800px;
+  min-height: 500px;
+}
+/*
 body{
   color: black;
   font-family: arial;
