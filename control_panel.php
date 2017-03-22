@@ -56,7 +56,7 @@
 						<button class="toolbarButton" id="teamLog"><i class="ion-ios-pulse-strong"></i><br>Activity</button>
 						<button class="toolbarButton" id="statistics"><i class="ion-stats-bars"></i><br>Statistics</button>
 						<button class="toolbarButton" id="settings"><i class="ion-gear-a"></i><br>Settings</button>
-						<button class="toolbarButton" id="printTeamData"><i class="ion-printer"></i><br>Print Team Data</button>
+						<button class="toolbarButton" id="printTeamData"><i class="ion-printer"></i><br>Print Login Data</button>
 					</div>
 				</div>
 

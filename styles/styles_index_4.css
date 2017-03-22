@@ -38,7 +38,7 @@ p{
   float:left;
   margin-left:50%;
   height:inherit;
-  padding:15px;
+  padding:20px;
 }
 .subLeft{
   position: absolute;
@@ -47,19 +47,22 @@ p{
   text-align: right;
   transform: translateY(-50%);
   color: #49D6B8;
-  padding: 5%;
+  padding: 80px;
 }
 
 .indexButton{
-  height: 40%;
-  border:none;
-  border-radius: 10px;
-  background-color: rgba(0,0,0,0);
-  transition: background-color 0.4s ease;
-  text-align: left;
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  display: inline-block;
+  border-bottom: 0px solid transparent;
+  width: auto;
+  transition: 0.3s ease;
+  height: 25px;
   font-family: 'Advent Pro', sans-serif;
   font-size: 20px;
+  padding: 0;
 }
 .indexButton:hover{
-  background-color: #49D6B8;
+  border-bottom: 3px solid #49D6B8;
 }

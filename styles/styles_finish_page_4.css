@@ -37,7 +37,7 @@ h1{
 	right: 0%;
 }
 .pageTitle{
-	padding: 20px;
+	padding: 80px;
 	color: #49D6B8;
 	text-align: right;
 }
@@ -54,18 +54,21 @@ h1{
 	font-size: 50%;
 }
 #returnTitle{
-	width: auto;
-  height: auto;
-  border:none;
-	padding:20px;
-  border-radius: 10px;
-  background-color: rgba(0,0,0,0);
-  transition: background-color 0.4s ease;
+	text-decoration: none;
+  border: none;
+  background-color: white;
+  display: inline-block;
+  border-bottom: 0px solid transparent;
+  width: auto;
+  transition: 0.3s ease;
+  height: 25px;
   font-family: 'Advent Pro', sans-serif;
   font-size: 20px;
+  padding: 0;
+	margin-left: 20px;
 }
 #returnTitle:hover{
-	background-color: #49D6B8;
+	border-bottom: 3px solid #49D6B8;
 }
 #rank{
 	font-size: 200%;
