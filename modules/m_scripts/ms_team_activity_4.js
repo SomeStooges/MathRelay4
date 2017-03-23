@@ -2,6 +2,11 @@
 var lastUp = 0;
 var t;
 var counter;
+$(window).scroll(function(){
+    $('.left').css({
+        'left': $(this).scrollLeft()
+    });
+});
 
 function parseTime(time){
   time = time - startTime;
@@ -54,12 +59,12 @@ $(document).ready( function(){
       case 1:
         stopInterval();
         counter=0;
-        $("#freezeButton").text('Unfreeze Log');
+        $("#freezeButton").text('Click to Unfreeze Log');
         break;
       case 0:
         startInterval();
         counter=1;
-        $("#freezeButton").text('Freeze Log');
+        $("#freezeButton").text('Click to Freeze Log');
         break;
     }
   });

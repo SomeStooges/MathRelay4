@@ -29,19 +29,55 @@
 			</span>
 		</div>
 		<?php if(!function_exists('db_Query')){require $_SERVER['DOCUMENT_ROOT'] . 'MathRelay3/server/utilities.php';} ?>
-		<!--<b> Team ID </b>--> <button id='freezeButton'>Freeze Log</button>
-		<div id = 'table'>
-			<th><b> Team ID </b></th>
-			<table id='teamActivity'>
+		<div class="top">
+			<div class="head">
+					Team ID
+			</div>
+			<div class="freeze">
+				<button id='freezeButton'> Click to Freeze Log</button>
+			</div>
+		</div>
+
+		<div class="left">
+			<table class='teamID'>
 				<?php
 					$numTeams = getOption('reset','numTeams');
 					for($i=1;$i<=$numTeams;$i++){
-						print "<tr><td id='t" . $i . "' class='teamIDdiv'>";
+						print "<tr><td id='i" . $i . "' class='teamIDdiv'>";
 						print $i;
 						print "</td></tr>";
 					}
 				?>
 			</table>
 		</div>
+
+		<div class="content">
+			<table class='teamActivity'>
+				<?php
+					for($i=1;$i<=$numTeams;$i++){
+						print "<tr><td id='t" . $i . "' class='teamActivityDiv'>";
+						//print $i;
+						print "</td></tr>";
+					}
+				?>
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</body>
 </html>
