@@ -200,7 +200,7 @@ $(document).ready( function(){
     switch(selectedID){
       case 'forceStatUpdate':
         updateStatistics();
-        $('#'+lastID).css('background-color', 'dimgray');
+        $('#'+lastID).css('background-color', '#49D6B8');
         break;
       case 'bindLineButton':
         $('#bindLine').show();
@@ -235,7 +235,7 @@ $(document).ready( function(){
         $('#y-axis').text('Number of Attempts');
         break;
     }
-    $('#'+selectedID).css('background-color', 'dimgray');
+    $('#'+selectedID).css('background-color', '#49D6B8');
     $('#forceStatUpdate').css('background-color', '');
   });
 });
