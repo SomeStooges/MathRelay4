@@ -9,8 +9,6 @@ $(window).scroll(function(){
 });
 
 function parseTime(time){
-  time = time - startTime;
-
   var tempH = Math.abs(parseInt(time/3600));
   var tempM = Math.abs(parseInt((time%3600)/60));
   var tempS = Math.abs(time%60);

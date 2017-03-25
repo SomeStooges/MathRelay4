@@ -11,6 +11,7 @@
 		<script type="text/javascript" src="../modules/m_scripts/ms_team_data_4.js"></script>
 		<script type="text/javascript">
 			var startTime = JSON.parse('<?php print json_encode($startTime) ?>');
+			console.log("Start Time: " + startTime);
 		</script>
 
 		<!--Bootstrap code -->

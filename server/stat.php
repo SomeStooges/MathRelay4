@@ -42,7 +42,7 @@
       $isCorrect = ($obj->level_3_result == 1 & $obj->level_2_result == 1 & $obj->level_1_result == 1 ) ? true : false;
 
       //Group the number of attempts and number of correct responses together into 1 minute blocks based on the elapsed time (responses/time line)
-      $obj->timesptamp = $obj->timesptamp - $startTime; //should be "timestamp"
+      $obj->timesptamp = $obj->timesptamp; //should be "timestamp"
       if( $obj->timesptamp < 0 ){
         $obj->timesptamp = 0;
       }

@@ -13,6 +13,8 @@
 	if($checkEvent[0] == "close"){
 		header('location: finish_page.php');
 	}
+	$stime = db_Query("SELECT value FROM relay_options WHERE name='startTime';");
+
 	/*$currentEvent = getOption('event','currentEvent');
 	if($currentEvent == 'none'){
 		header('location: index.php');
@@ -47,7 +49,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript">
 			var choiceBank = JSON.parse('<?php print json_encode($choiceBank) ?>');
-			var id = JSON.parse('<?php print json_encode($_SESSION['teamID']) ?>')
+			var id = JSON.parse('<?php print json_encode($_SESSION['teamID']) ?>');
+			var startTime = JSON.parse('<?php print json_encode($stime) ?>');
 		</script>
 		<script type="text/javascript" src="./scripts/scripts_answer_sheet.js"></script>
 

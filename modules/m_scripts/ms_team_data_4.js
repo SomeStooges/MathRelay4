@@ -2,13 +2,13 @@
 
 //Requests team_data database from the server and reprints the table's contents
 function parseTime(time){
-  if (time > startTime){
+  /*if (time > startTime){
     time = time-startTime;
   }
   else {
     time = startTime - startTime;
-  }
-
+  }*/
+  console.log(time);
   var tempH = Math.abs(parseInt(time/3600));
   var tempM = Math.abs(parseInt((time%3600)/60));
   var tempS = Math.abs(time%60);

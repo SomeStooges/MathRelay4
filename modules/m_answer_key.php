@@ -49,70 +49,76 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Advent+Pro:500' rel='stylesheet' type='text/css'/>
 	</head>
-	<body id="body">
+	<body>
 		<?php if(!function_exists('db_Query')){require $_SERVER['DOCUMENT_ROOT'] . 'MathRelay3/server/utilities.php';} ?>
-		<!-- Content for Answer Key tab -->
-		<div id='questionDiv' class='answerKeyElement'>
-			<b> Question Number </b>
-			<table id='questionTable'>
-				<?php
-					$numQuestions = getOption('answerkey','numQuestion');
-					for ($countOut = 0; $countOut < ($numQuestions / 5); $countOut++) {
-						print "<tr class='questions'>";
-						for ($countIn = 1; $countIn <= 5; $countIn++) {
-							$currentNum = $countIn + (5 * $countOut);
-							if ($currentNum <= $numQuestions) {
-								print "<td><button class='seriesNumbers' id='q" . $currentNum . "'> " . $currentNum . " </button></td>";
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3">
+					<b>Question Number</b>
+					<table id='questionTable'>
+						<?php
+							$numQuestions = getOption('answerkey','numQuestion');
+							for ($countOut = 0; $countOut < ($numQuestions / 5); $countOut++) {
+								print "<tr class='questions'>";
+								for ($countIn = 1; $countIn <= 5; $countIn++) {
+									$currentNum = $countIn + (5 * $countOut);
+									if ($currentNum <= $numQuestions) {
+										print "<td><button class='seriesNumbers' id='q" . $currentNum . "'> " . $currentNum . " </button></td>";
+									}
+								}
+							print "</tr>";
 							}
-						}
-					print "</tr>";
-					}
-				?>
-			</table>
-		</div>
-		<div id='level3Div' class='answerKeyElement'>
-			<b> Level 3 Answer </b>
-			<table id='level3table'>
-				<?php
-					$numChoices = 6;
-					$level = 3;
-					for($i=1;$i<=6;$i++){
-						print "<tr><td><input id='v".$level."_".$i."' class='level".$level."Values'></td>";
-						print "<td><button id='s".$level."_".$i."' class='level".$level."Set'>Select</button></td></tr>";
-					}
-				?>
-			</table>
-		</div>
-		<div id='level2Div' class='answerKeyElement'>
-			<b> Level 2 Answer </b>
-			<table id='level2table'>
-				<?php
-					$level = 2;
-					for($i=1;$i<=6;$i++){
-						print "<tr><td><input id='v".$level."_".$i."' class='level".$level."Values'></td>";
-						print "<td><button id='s".$level."_".$i."' class='level".$level."Set'>Select</button></td></tr>";
-					}
-				?>
-			</table>
-		</div>
-		<div id='level1Div' class='answerKeyElement'>
-			<b> Level 1 Answer </b>
-			<table id='level1table'>
-				<?php
-					$level = 1;
-					for($i=1;$i<=6;$i++){
-						print "<tr><td><input id='v".$level."_".$i."' class='level".$level."Values'></td>";
-						print "<td><button id='s".$level."_".$i."' class='level".$level."Set'>Select</button></td></tr>";
-					}
-				?>
-			</table>
-		</div>
-		<br>
-		<div id='special_characters'>
-			<b>Special Characters</b><br>
-			<button class='special_button' id='PiButton'>&#960</button>
-			<button class='special_button' id='RadicalButton'>&#8730</button>
-			<button class='special_button' id='InfinityButton'>&#8734</button>
+						?>
+					</table>
+					<div id='special_characters'>
+						<b>Special Characters</b><br>
+						<button class='special_button' id='PiButton'>&#960</button>
+						<button class='special_button' id='RadicalButton'>&#8730</button>
+						<button class='special_button' id='InfinityButton'>&#8734</button>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="col-md-4">
+						<b> Level 3 Answer </b>
+						<table class='answerTable'>
+							<?php
+								$numChoices = 6;
+								$level = 3;
+								for($i=1;$i<=6;$i++){
+									print "<tr><td class='inputs'><input id='v".$level."_".$i."' class='level".$level."Values'></td>";
+									print "<td class='buttons'><button id='s".$level."_".$i."' class='level".$level."Set'>Select</button></td></tr>";
+								}
+							?>
+						</table>
+					</div>
+					<div class="col-md-4">
+						<b> Level 2 Answer </b>
+						<table class='answerTable'>
+							<?php
+								$level = 2;
+								for($i=1;$i<=6;$i++){
+									print "<tr><td class='inputs'><input id='v".$level."_".$i."' class='level".$level."Values'></td>";
+									print "<td class='buttons'><button id='s".$level."_".$i."' class='level".$level."Set'>Select</button></td></tr>";
+								}
+							?>
+						</table>
+					</div>
+					<div class="col-md-4">
+						<b> Level 1 Answer </b>
+						<table class='answerTable'>
+							<?php
+								$level = 1;
+								for($i=1;$i<=6;$i++){
+									print "<tr><td class='inputs'><input id='v".$level."_".$i."' class='level".$level."Values'></td>";
+									print "<td class='buttons'><button id='s".$level."_".$i."' class='level".$level."Set'>Select</button></td></tr>";
+								}
+							?>
+						</table>
+					</div>
+
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

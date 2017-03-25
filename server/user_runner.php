@@ -22,6 +22,10 @@
 		$l2 = $_REQUEST['level2'];
 		$l1 = $_REQUEST['level1'];
 
+		//Check start time
+		$stime = mysqli_fetch_object(db_Query("SELECT `value` FROM relay_options WHERE `name` = 'startTime'"));
+		$stime = $stime->value;
+
 		//Check whether those answers were correct
 		$resource = db_Query("SELECT correct_index FROM answer_key WHERE series_number='$series' ORDER BY level_number DESC;");
 		$answer = mysqli_fetch_object($resource);
@@ -41,7 +45,7 @@
 		$numAtt = intval($attempts[ $series-1 ]) + 1;
 		$attempts[ $series-1 ] = strval($numAtt);
 		$lastPoint = $resource->last_point;
-		$ctime = time();
+		$ctime = time()-$stime;
 
 		if( $numAtt < 6 && strval($ansHis[ $series-1 ])!='1'){
 			if($res1 && $res2 && $res3){
@@ -49,7 +53,7 @@
 				$award = 12 - 2 * intval( $attempts[ $series-1 ] );
 				$points += $award;
 				$ansHis[ $series-1 ] = '1';
-				$lastPoint = time();
+				$lastPoint = time()-$stime;
 
 				db_Query("INSERT INTO admin_log VALUES ('$teamID','$ctime','$series','$award','$points');");
 			} else {

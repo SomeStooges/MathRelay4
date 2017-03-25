@@ -15,13 +15,16 @@ var EventTimer = function(startTime, elapsedTime){
 
   this.startTimer = function(){
       var date = new Date();
+      var originalStartExists=false;
     if(this.isReloading == false){
       if(this.startTime == 0 || this.startTime == 'NaN'){
+        originalStartExists = false;
         //First time the clock is started
         //console.log("Starting the Timer; startTime = " + this.startTime);
         this.startTime = parseInt(Math.floor( date.getTime() / 1000 ));
         //console.log("this.startTime : " + this.startTime + " " + typeof this.startTime);
       } else {
+        originalStartExists = true;
         //clock is restarted; so that "start time" is adjusted to be however many second ago the button was first pushed.
         //console.log("Restarting the timer; startTime = " + this.startTime);
         this.startTime  = parseInt(Math.floor( date.getTime() / 1000 )) - this.elapsedTime;
@@ -31,13 +34,20 @@ var EventTimer = function(startTime, elapsedTime){
       //console.log("Reloading the timer; startTime = " + this.startTime)
     }
 
-    var obj = new Object();
-    obj.action = 'setStartTime';
-    obj.startTime = this.startTime;
-    $.post('server/admin_runner.php',obj, function(){
+    if(originalStartExists = false){
+      var obj = new Object();
+      obj.action = 'setStartTime';
+      obj.startTime = this.startTime;
+      $.post('server/admin_runner.php',obj, function(){
+        document.getElementById('iframe1').contentWindow.location.reload();
+        document.getElementById('iframe3').contentWindow.location.reload();
+      });
+    }
+    /*else{
       document.getElementById('iframe1').contentWindow.location.reload();
       document.getElementById('iframe3').contentWindow.location.reload();
-    });
+    }*/
+
     this.intervalID = window.setInterval(function(){myTimer.updateTimer()}, 1000);
   }
 
