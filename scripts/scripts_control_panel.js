@@ -36,6 +36,7 @@ var EventTimer = function(startTime, elapsedTime){
 
     if(originalStartExists = false){
       var obj = new Object();
+      console.log('No previous  start time exists');
       obj.action = 'setStartTime';
       obj.startTime = this.startTime;
       $.post('server/admin_runner.php',obj, function(){
@@ -63,7 +64,7 @@ var EventTimer = function(startTime, elapsedTime){
     var date = new Date();
     this.elapsedTime = parseInt(Math.floor( date.getTime() / 1000 ) - this.startTime);
     this.parseToTimerDisplay(this.elapsedTime);
-    //console.log("Updating the Timer; elapsedTime = " + this.elapsedTime);
+    console.log("Updating the Timer; elapsedTime = " + this.elapsedTime);
   }
 
   this.displayElapsedTime = function(){
@@ -75,7 +76,7 @@ var EventTimer = function(startTime, elapsedTime){
     console.log("Stopping the Timer");
     var obj = new Object();
     obj.action = 'setStopTime';
-    obj.stopTime = this.elapsedTime;
+    obj.stopTime = $('#startTimeDiv').html().trim() + this.elapsedTime;
     $.post('server/admin_runner.php',obj);
 
     this.startTime  = parseInt(Math.floor( date.getTime() / 1000 )) - this.elapsedTime;
@@ -268,7 +269,7 @@ $(document).ready(function() {
 
   //Creates new EventTimer object and assigns it to pointer myTimer
   myTimer.startTime = $('#startTimeDiv').html().trim();
-  myTimer.elapsedTime = parseInt( $('#stopTimeDiv').html().trim() );
+  myTimer.elapsedTime = parseInt( $('#stopTimeDiv').html().trim() )-parseInt( $('#startTimeDiv').html().trim() );
   console.log("From ready: myTimer = " + $('#startTimeDiv').html().trim());
 
   updateUI();

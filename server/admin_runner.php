@@ -63,7 +63,8 @@
 	}
 
 	function setStopTime(){
-		$stopTime = $_REQUEST['stopTime'];
+		//$stopTime = $_REQUEST['stopTime'];
+		$stopTime = time();
 		$resource = db_Query("UPDATE `relay_options` SET `value` = '$stopTime' WHERE `name` = 'stopTime'");
 	}
 

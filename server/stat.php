@@ -4,13 +4,13 @@
 	function getStatistics(){
 		//Get the event start time and determine how many minutes have passed
     $startTime = getOption('event','startTime');
-		$elapsedTime = getOption('event','stopTime');
+		$stopTime = getOption('event','stopTime');
 		$event = getOption('event','currentEvent');
 		$numTeams = getOption('reset','numTeams')+1;
 		$ctime = time();
 
 		if( $event = 'close' || $event = 'stop' || $event = 'none' || $event = 'open'){
-			$numMinPassed = floor( ($elapsedTime) / 60 );
+			$numMinPassed = floor( ($stopTime - $startTime) / 60 );
 		} else {
 			$numMinPassed = floor( $ctime - $startTime );
 		}
